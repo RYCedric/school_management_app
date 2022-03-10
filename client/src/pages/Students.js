@@ -3,7 +3,7 @@ import data from "../data";
 
 const Students = () => {
   return (
-    <>
+    <div className="students">
       <h1>All Students Data</h1>
       <table>
         <thead>
@@ -33,7 +33,7 @@ const Students = () => {
           ))}
         </tbody>
       </table>
-    </>
+    </div>
   );
 };
 

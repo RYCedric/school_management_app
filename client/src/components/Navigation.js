@@ -26,10 +26,13 @@ const Navigation = () => {
             <GiSpeedometer />
             Dashboard
           </li>
-          <li>
-            <GiPerson />
-            Students
-          </li>
+          <Link to="/students">
+            <li>
+              <GiPerson />
+              Students
+            </li>
+          </Link>
+
           <Link to="/teachers">
             <li>
               <GiDarkSquad />
