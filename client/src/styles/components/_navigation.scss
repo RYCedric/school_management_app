@@ -1,0 +1,31 @@
+nav {
+  a:nth-child(1) {
+    background-color: $color1;
+    color: $white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1.2rem;
+    display: flex;
+    font-size: 1.4rem;
+    svg {
+      color: $white;
+      margin: 0 1.2rem 0 1rem;
+      font-size: 3rem;
+    }
+  }
+  ul {
+    li {
+      background-color: $color2;
+      color: $white;
+      list-style-type: none;
+      border: 1px solid $black;
+      padding: 1rem;
+      align-items: center;
+      font-size: 1.2rem;
+      svg {
+        margin: 0 2rem 0 1.2rem;
+        color: $color1;
+      }
+    }
+  }
+}
