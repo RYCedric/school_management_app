@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
 
 import Navigation from "./components/Navigation";
 import Students from "./pages/Students";
@@ -11,7 +12,7 @@ const App = () => {
       <div className="wrapper">
         <Navigation />
         <main>
-          <header>Find Something ...</header>
+          <Header />
           <div>
             <Routes>
               <Route path="/" element={<Students />} />
