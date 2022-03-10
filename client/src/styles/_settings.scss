@@ -1,0 +1,20 @@
+$color1: #ffa401;
+$color2: #042954;
+$white: #fffbf4;
+$black: #212530;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: $color1;
+  padding: 1rem;
+
+  a {
+    color: $white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
