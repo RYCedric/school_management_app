@@ -5,6 +5,7 @@ import Header from "./components/Header";
 
 import Navigation from "./components/Navigation";
 import Dashboard from "./pages/Dashboard";
+import Student from "./pages/Student";
 import Students from "./pages/Students";
 import Teachers from "./pages/Teachers";
 
@@ -19,6 +20,7 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/students" element={<Students />} />
+              <Route path="/student/:id" element={<Student />} />
               <Route path="/teachers" element={<Teachers />} />
             </Routes>
           </div>

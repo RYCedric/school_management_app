@@ -11,8 +11,12 @@ $background: #f0f1f3;
 body {
   a {
     text-decoration: none;
-    list-style-type: none;
     color: $white;
+  }
+  ul {
+    li {
+      list-style-type: none;
+    }
   }
   .wrapper {
     display: grid;

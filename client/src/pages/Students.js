@@ -1,5 +1,6 @@
 import React from "react";
 import data from "../data";
+import { Link } from "react-router-dom";
 
 const Students = () => {
   return (
@@ -21,7 +22,9 @@ const Students = () => {
           {data.students.map((student) => (
             <tr key={student.id}>
               <td>
-                <img src={student.image} alt={student.name} />
+                <Link to={`/student/${student.id}`}>
+                  <img src={student.image} alt={student.name} />
+                </Link>
               </td>
               <td>{student.name}</td>
               <td>{student.gender}</td>
