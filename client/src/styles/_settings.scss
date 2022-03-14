@@ -9,6 +9,11 @@ $background: #f0f1f3;
   padding: 0;
 }
 body {
+  a {
+    text-decoration: none;
+    list-style-type: none;
+    color: $white;
+  }
   .wrapper {
     display: grid;
     grid-template-columns: 20% 1fr;
@@ -17,8 +22,8 @@ body {
       .content {
         background: $white;
         margin: 1.5rem 3rem;
-        padding: 1rem;
         border-radius: 5px;
+        overflow: auto;
         h1 {
           font-size: 1.2rem;
           margin-bottom: 2rem;

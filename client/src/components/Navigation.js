@@ -15,66 +15,68 @@ import {
 
 const Navigation = () => {
   return (
-    <div>
-      <nav>
+    <nav>
+      <div className="logo">
         <Link to="/">
           <IoSchoolSharp />
           School Management
         </Link>
-        <ul>
+      </div>
+      <ul>
+        <Link to="/">
           <li>
             <GiSpeedometer />
             Dashboard
           </li>
-          <Link to="/students">
-            <li>
-              <GiPerson />
-              Students
-            </li>
-          </Link>
+        </Link>
+        <Link to="/students">
+          <li>
+            <GiPerson />
+            Students
+          </li>
+        </Link>
 
-          <Link to="/teachers">
-            <li>
-              <GiDarkSquad />
-              Teachers
-            </li>
-          </Link>
+        <Link to="/teachers">
+          <li>
+            <GiDarkSquad />
+            Teachers
+          </li>
+        </Link>
 
-          <li>
-            <RiGroupLine />
-            Parents
-          </li>
-          <li>
-            <GiCalculator />
-            Acconunt
-          </li>
-          <li>
-            <GiPencilRuler />
-            Class
-          </li>
-          <li>
-            <GiBookmarklet />
-            Subject
-          </li>
-          <li>
-            <GiCalendar />
-            Class Routine
-          </li>
-          <li>
-            <GiNotebook />
-            Attendence
-          </li>
-          <li>
-            <RiFilePaperLine />
-            Exam
-          </li>
-          <li>
-            <RiSettings2Line />
-            Account
-          </li>
-        </ul>
-      </nav>
-    </div>
+        <li>
+          <RiGroupLine />
+          Parents
+        </li>
+        <li>
+          <GiCalculator />
+          Acconunt
+        </li>
+        <li>
+          <GiPencilRuler />
+          Class
+        </li>
+        <li>
+          <GiBookmarklet />
+          Subject
+        </li>
+        <li>
+          <GiCalendar />
+          Class Routine
+        </li>
+        <li>
+          <GiNotebook />
+          Attendence
+        </li>
+        <li>
+          <RiFilePaperLine />
+          Exam
+        </li>
+        <li>
+          <RiSettings2Line />
+          Account
+        </li>
+      </ul>
+    </nav>
   );
 };
 
