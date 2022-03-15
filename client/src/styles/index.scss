@@ -1,7 +1,9 @@
 @import "./settings";
 @import "./pages/dashboard";
-@import "./pages/students";
-@import "./pages/student";
+@import "./pages/student/students";
+@import "./pages/student/student";
+@import "./pages/student/admissionForm";
+@import "./pages/student/promotion";
 @import "./components/navigation";
 @import "./components/header";
 @import "./components/calendarEvent";

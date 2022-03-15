@@ -9,6 +9,10 @@ $background: #f0f1f3;
   padding: 0;
 }
 body {
+  font-family: Helvetica, sans-serif;
+  .row {
+    display: flex;
+  }
   a {
     text-decoration: none;
     color: $white;
@@ -19,6 +23,7 @@ body {
     }
   }
   .wrapper {
+    height: 100vh;
     display: grid;
     grid-template-columns: 20% 1fr;
     main {

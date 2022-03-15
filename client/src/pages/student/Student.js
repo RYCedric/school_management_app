@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { FaRegEdit, FaArrowCircleLeft } from "react-icons/fa";
-import datas from "../data";
+import datas from "../../data";
 
 const Student = () => {
   const params = useParams();

@@ -1,0 +1,44 @@
+.promotion {
+  padding: 2rem;
+  form {
+    .row {
+      justify-content: space-between;
+      margin-bottom: 0.7rem;
+      .block {
+        label {
+          display: block;
+          font-size: 1.1rem;
+          margin-bottom: 0.7rem;
+        }
+      }
+    }
+    select {
+      padding: 0.4rem;
+      border: none;
+      background: $background;
+      border-radius: 999px;
+      font-size: 1rem;
+      width: 8rem;
+    }
+    input[type="submit"] {
+      padding: 0.8rem 2.5rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: $white;
+      border-radius: 8px;
+      background: $color1;
+      border: none;
+      margin-right: 2rem;
+      margin-top: 2rem;
+    }
+    input[type="reset"] {
+      padding: 0.8rem 2.5rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: $white;
+      border-radius: 8px;
+      background: $color2;
+      border: none;
+    }
+  }
+}
