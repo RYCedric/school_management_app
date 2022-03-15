@@ -30,8 +30,14 @@
       border: none;
       margin-right: 2rem;
       margin-top: 2rem;
+      cursor: pointer;
+      transition: 400ms ease;
+      &:hover {
+        background: $color2;
+      }
     }
     input[type="reset"] {
+      cursor: pointer;
       padding: 0.8rem 2.5rem;
       font-size: 1.1rem;
       font-weight: bold;
@@ -39,6 +45,10 @@
       border-radius: 8px;
       background: $color2;
       border: none;
+      transition: 400ms ease;
+      &:hover {
+        background: $color1;
+      }
     }
   }
 }
