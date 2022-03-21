@@ -1,11 +1,18 @@
 const mongoose = require("mongoose");
 const { isEmail } = require("validator");
 
+const number = Math.random() * 10000;
+const roll = `EL-${Math.round(number)} `;
+
 const studentSchema = new mongoose.Schema(
   {
     name: {
       type: String,
       require: true,
+    },
+    roll: {
+      type: String,
+      default: roll,
     },
     picture: {
       type: String,
