@@ -5,7 +5,6 @@ import Card from "../components/Card";
 import CalendarEvent from "../components/CalendarEvent";
 import "chart.js/auto";
 import { Bar, Doughnut, Line } from "react-chartjs-2";
-import { tr } from "date-fns/locale";
 
 const Dashboard = () => {
   const [state, setstate] = useState({

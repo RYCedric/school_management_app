@@ -1,8 +1,16 @@
 import React from "react";
 import data from "../../data";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { getAllStudents } from "../../actions/student.action";
 
 const Students = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getAllStudents());
+  }, [dispatch]);
+
   return (
     <div className="students">
       <h1>All Students Data</h1>
