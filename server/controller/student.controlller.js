@@ -64,13 +64,23 @@ module.exports.updateStudent = async (req, res) => {
           name: req.body.name,
         },
       },
-      { new: true, upsert: true, setDefaultsOnInsert: true },
-      (err, docs) => {
-        if (!err) return res.send(docs);
-        else return res.status(500).send({ message: err });
-      }
-    );
+      { new: true, upsert: true, setDefaultsOnInsert: true }
+    )
+      .then((docs) => res.send(docs))
+      .catch((err) => res.status(500).send({ message: err }));
   } catch (error) {
     return res.status(500).json({ message: error });
+  }
+};
+
+module.exports.deleteStudent = async (req, res) => {
+  if (!ObjectID.isValid(req.params.id))
+    return res.status(400).send("ID unknow : " + req.params.id);
+
+  try {
+    await StudentModel.deleteOne({ _id: req.params.id }).exec();
+    res.status(200).json({ message: "Succefuly deleted. " });
+  } catch (error) {
+    return res.status(500).sen({ message: error });
   }
 };
